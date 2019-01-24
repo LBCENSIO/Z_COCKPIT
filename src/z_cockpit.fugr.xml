@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Groupe de fonction pour cockpit</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZ_COCKPITF01</SOBJ_NAME>
+    <SOBJ_NAME>LZ_COCKPITTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ_COCKPIT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZSD_GET_DATA_COCKPIT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Récupération des données pour le cockpit</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_NUM_COMMANDE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_START_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>DATS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_END_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>DATS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_NUM_DOSSIER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>PS_PSP_PNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_NOM_DOSSIER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>PS_POST1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_NUM_CLIENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_NOM_CLIENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>NAME1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_NUM_POSTE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>POSNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_ORG_COMM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TVKOT-VTEXT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>IT_PROJECT</PARAMETER>
+       <TYP>ZCKPT_PROJECT_TT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_NUM_COMMANDE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Numéro du document commercial</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_START_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Zone de type DATS</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_END_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Zone de type DATS</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_NUM_DOSSIER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Élément d&apos;organigramme technique de projet (élément d&apos;OTP)</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_NOM_DOSSIER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PS: désignation (première ligne de texte)</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_NUM_CLIENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Numéro de client</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_NOM_CLIENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nom</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_NUM_POSTE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Numéro de poste du document commercial</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_ORG_COMM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Désignation</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_PROJECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Type de table pour ZCKPT_PROJECT_S</STEXT>
+       <INDEX> 010</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
